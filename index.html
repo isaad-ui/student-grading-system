@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Grading System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h2>Student Grading System</h2>
+
+<form id="studentForm">
+  <label>Student Name:
+    <input type="text" id="studentName" required />
+  </label>
+  <label>DCIT 104:
+    <input type="number" id="dcit104" min="0" max="100" required />
+  </label>
+  <label>DCIT 102:
+    <input type="number" id="dcit102" min="0" max="100" required />
+  </label>
+  <label>MATH 122:
+    <input type="number" id="math122" min="0" max="100" required />
+  </label>
+  <label>MATH 126:
+    <input type="number" id="math126" min="0" max="100" required />
+  </label>
+  <label>STAT 112:
+    <input type="number" id="stat112" min="0" max="100" required />
+  </label>
+  <label>UGRC 110:
+    <input type="number" id="ugrc110" min="0" max="100" required />
+  </label>
+  <button type="submit">Add Student</button>
+</form>
+
+<h3>Students</h3>
+<ul id="studentList"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
